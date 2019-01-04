@@ -1,0 +1,17 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Refined implementation: f50 scorer]{Refined implementation with custom f-beta(50) scorer. Nested cross-validation (stratified shuffle split)     with 10 folds both in inner and outer loops (100 folds in total). Test size in each fold is 0.15.}
+\label{tab:refined-results-f50}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.979 & 0.010 & 0.968 & 0.985 \\
+SVC (rbf) & 0.974 & 0.015 & 0.955 & 0.985 \\
+SVC (poly) & 0.977 & 0.012 & 0.965 & 0.985 \\
+RandomForestClassifier & 0.955 & 0.029 & 0.926 & 0.972 \\
+AdaBoostClassifier & 0.969 & 0.017 & 0.948 & 0.981 \\
+GaussianNB & 0.935 & 0.026 & 0.890 & 0.960 \\
+\midrule
+\end{tabular}
+\end{table}

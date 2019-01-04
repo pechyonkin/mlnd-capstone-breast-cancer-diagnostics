@@ -1,0 +1,17 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Accuracy without grid seach]{Basic implementation with \textbf{log-transformed data and removed outliers}}
+\label{tab:basic-results-transformed}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.965 & 0.023 & 0.936 & 0.983 \\
+SVC (rbf) & 0.940 & 0.029 & 0.873 & 0.980 \\
+SVC (poly) & 0.958 & 0.025 & 0.919 & 0.981 \\
+RandomForestClassifier & 0.957 & 0.027 & 0.919 & 0.979 \\
+AdaBoostClassifier & 0.966 & 0.023 & 0.937 & 0.983 \\
+GaussianNB & 0.947 & 0.030 & 0.917 & 0.966 \\
+\midrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+\begin{table}[htb]
+	\centering
+	\sisetup{output-decimal-marker = {.}}
+	\caption[Benchmark models]
+	{Benchmark models: accuracy, true positive (TPR) and true negative (TNR) rates are reported.}
+	\label{tab:benchmark}
+	\begin{tabular}{cS[table-format=2.2]S[table-format=1.2]S[table-format=1.2]}
+		\toprule
+		\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}} \\
+		\midrule
+		SVC (linear)			& 78.45			& 0.72	& 0.81	\\
+		SVC (rbf)				& 93.63			& 0.94	& 0.92	\\
+		SVC (quadratic)			& 72.93			& 0.68	& 0.75	\\
+		Random Forest (100)		& 95.64			& 0.97	& 0.94	\\
+		Random Forest (10)		& 90.13			& 0.92	& 0.89	\\
+		ANN						& 92.44			& 0.93	& 0.92	\\
+		Na\"{\i}ve Bayes		& 65.27			& 0.57	& 0.72	\\
+		\midrule
+	\end{tabular}
+\end{table}

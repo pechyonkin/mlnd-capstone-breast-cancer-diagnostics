@@ -1,0 +1,17 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Refined implementation: accuracy scorer]{Refined implementation with accuracy scorer. Nested cross-validation (stratified shuffle split) with     10 folds both in inner and outer loops (100 folds in total). Test size in each fold is 0.15.}
+\label{tab:refined-results-acc}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.982 & 0.008 & 0.961 & 0.994 \\
+SVC (rbf) & 0.981 & 0.010 & 0.958 & 0.994 \\
+SVC (poly) & 0.974 & 0.013 & 0.955 & 0.985 \\
+RandomForestClassifier & 0.955 & 0.029 & 0.926 & 0.972 \\
+AdaBoostClassifier & 0.969 & 0.017 & 0.945 & 0.983 \\
+GaussianNB & 0.938 & 0.030 & 0.900 & 0.960 \\
+\midrule
+\end{tabular}
+\end{table}

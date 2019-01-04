@@ -1,0 +1,17 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Improvement of model refinement over basic results]{Improvement of model refinement over basic results}
+\label{tab:diff-refined-basic}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.018 & -0.658 & 0.027 & 0.012 \\
+SVC (rbf) & 0.044 & -0.669 & 0.098 & 0.015 \\
+SVC (poly) & 0.017 & -0.483 & 0.039 & 0.004 \\
+RandomForestClassifier & -0.002 & 0.045 & 0.008 & -0.008 \\
+AdaBoostClassifier & 0.003 & -0.259 & 0.009 & -0.000 \\
+GaussianNB & -0.010 & -0.004 & -0.018 & -0.006 \\
+\midrule
+\end{tabular}
+\end{table}

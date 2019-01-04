@@ -1,0 +1,16 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Improvement of transformation]{Improvement of basic implementation over benchmark}
+\label{tab:diff-basic-bench}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.230 & 0.300 & 0.213 \\
+SVC (rbf) & 0.004 & -0.071 & 0.065 \\
+SVC (poly) & 0.313 & 0.352 & 0.308 \\
+RandomForestClassifier & 0.000 & -0.053 & 0.042 \\
+GaussianNB & 0.521 & 0.608 & 0.341 \\
+\midrule
+\end{tabular}
+\end{table}

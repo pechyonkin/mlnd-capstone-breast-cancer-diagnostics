@@ -1,0 +1,16 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Improvement of model refinement over benchmark]{Improvement of model refinement over benchmark for all model classes}
+\label{tab:diff-refined-bench}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.252 & 0.335 & 0.228 \\
+SVC (rbf) & 0.048 & 0.019 & 0.081 \\
+SVC (poly) & 0.335 & 0.404 & 0.313 \\
+RandomForestClassifier & -0.002 & -0.046 & 0.034 \\
+GaussianNB & 0.506 & 0.579 & 0.334 \\
+\midrule
+\end{tabular}
+\end{table}

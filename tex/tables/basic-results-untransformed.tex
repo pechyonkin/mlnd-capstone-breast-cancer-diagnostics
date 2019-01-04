@@ -1,0 +1,17 @@
+\begin{table}[htb]
+\centering
+\sisetup{output-decimal-marker = {.}}\caption[Basic implementation: untransformed data]{Basic implementation with \textbf{untransformed data}}
+\label{tab:basic-results-untransformed}
+\begin{tabular}{cS[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]S[table-format=2.3, round-precision=3]}
+\toprule
+\multicolumn{1}{c}{\textbf{Classifier}} & \multicolumn{1}{c}{\textbf{Accuracy}} & \multicolumn{1}{c}{\textbf{SD}} & \multicolumn{1}{c}{\textbf{TPR}} & \multicolumn{1}{c}{\textbf{TNR}}\\
+\midrule
+SVC (linear) & 0.953 & 0.027 & 0.917 & 0.974 \\
+SVC (rbf) & 0.632 & 0.000 & 0.000 & 1.000 \\
+SVC (poly) & 0.955 & 0.026 & 0.923 & 0.974 \\
+RandomForestClassifier & 0.952 & 0.027 & 0.914 & 0.974 \\
+AdaBoostClassifier & 0.964 & 0.024 & 0.939 & 0.979 \\
+GaussianNB & 0.941 & 0.030 & 0.893 & 0.968 \\
+\midrule
+\end{tabular}
+\end{table}
